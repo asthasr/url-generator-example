@@ -8,8 +8,8 @@ public class DefaultURLGenerator implements URLGenerator {
     }
 
     public String urlForRequest (int id) {
-        System.out.println("This generator would now check the database for an URL template for " + getPartner() + ".");
-        System.out.println("We'll use an if statement instead...");
+        System.out.println("We would now check the database for an URL template for " + partner.toString() + ".");
+        System.out.println("Let's use an if statement instead...");
 
         String template = "";
 
@@ -20,9 +20,5 @@ public class DefaultURLGenerator implements URLGenerator {
         }
 
         return String.format(template, id);
-    }
-
-    private String getPartner() {
-        return partner.toString();
     }
 }
